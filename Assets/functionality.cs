@@ -176,10 +176,14 @@ public class functionality : MonoBehaviour
         Debug.LogFormat("[Popufur #{0}] TP command received.", _moduleId);
 
         command = command.ToLowerInvariant().Trim();
+        if (!command.StartsWith("press"))
+            command = " " + command;
 
-        if(Regex.IsMatch(command, @"^(press)?(\s+((" + labelNames[leftLabel].ToLowerInvariant() + ")|(" + labelNames[rightLabel].ToLowerInvariant() + ")))+$"))
+        if (Regex.IsMatch(command, @"^(press)?(\s+((" + labelNames[leftLabel].ToLowerInvariant() + ")|(" + labelNames[rightLabel].ToLowerInvariant() + ")))+$"))
         {
             Debug.LogFormat("[Popufur #{0}] TP command valid.", _moduleId);
+            if (!command.StartsWith("press"))
+                command = command.Trim();
 
             string[] commandBits = Regex.Split(command, @"\s+");
 
