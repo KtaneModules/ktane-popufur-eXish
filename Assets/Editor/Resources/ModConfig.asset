@@ -15,10 +15,9 @@ MonoBehaviour:
   title: Popufur
   author: eXish
   description: "Determine a binary number that then needs to be submitted using the
-    two interactable fur patches.\n\nThis is a reuploaded item from a creator who
-    wishes to remain anonymous.\r\n\r\nHTML: https://ktane.timwi.de/HTML/Popufur.html\r\nPDF:
-    https://ktane.timwi.de/PDF/Popufur.pdf\r\n\r\nPopufur (popufur) v2.2.1\nMaintained
-    by eXish\r\nTwitch Plays supported"
+    two interactable fur patches.\n\r\nHTML: https://ktane.timwi.de/HTML/Popufur.html\r\nPDF:
+    https://ktane.timwi.de/PDF/Popufur.pdf\r\n\r\nPopufur (popufur) v2.2.1\nModule
+    by BakersDozenBagels, maintained by eXish\r\nTwitch Plays supported"
   version: 2.2.1
   outputFolder: build
   previewImage: {fileID: 2800000, guid: b76acb0e5a1e09d4ba3d37d4b6bc75be, type: 3}
